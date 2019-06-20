@@ -1,65 +1,676 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="keywords" content="">
-    <meta name="author" content="Idrissi Ayoub">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="keywords" content="">
+  <meta name="author" content="Idrissi Ayoub">
+
+  <!-- Title Page -->
+  <title>Material Design Bootstrap</title>
+  <!-- END Title Page -->
+
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- END Fonts -->
+
+  <!-- Assets CSS-->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/mdb.min.css" rel="stylesheet">
+  <!-- END Assets CSS-->
+
+  <!-- Main  CSS-->
+  <link href="css/master.css" rel="stylesheet">
+  <link href="css/dashboard.css" rel="stylesheet">
+  <!-- END Main  CSS-->
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3><strong>YOUB</strong>CODE</h3>
+            <strong class="st-hide">YB</strong>
+        </div>
+        <div class="sidebar-auth">
+          <a href="#">
+            <img src="img/user.svg" alt="Ayoub Idrissi">
+            <span><strong>idrissi</strong> ayoub</span>
+          </a>
+        </div>
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-home"></i>
+                    Home
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    About
+                </a>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                    <i class="fas fa-copy"></i>
+                    Pages
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-image"></i>
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question"></i>
+                    FAQ
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-paper-plane"></i>
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- END Sidebar  -->
+
+    <!-- Content  -->
+    <div id="content">
+
+      <!--Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <i class="fas fa-align-left" id="sidebarCollapse"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="nav-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/user.svg" alt="Ayoub Idrissi">
+              </a>
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-right" aria-labelledby="nav-dropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--/.Navbar -->
+
+      <!-- Card Area -->
+      <div class="row myrow">
+        <div class="col-lg-2 dash-card">
+          <div class="dash-card-content">
+            <span>12</span>
+            <i class="fas fa-archway"></i><br>
+            <span>departement</span>
+          </div>
+        </div>
+        <div class="col-lg-2 dash-card">
+          <div class="dash-card-content">
+            <span>45</span>
+            <i class="fas fa-cogs"></i><br>
+            <span>service</span>
+          </div>
+        </div>
+        <div class="col-lg-2 dash-card">
+          <div class="dash-card-content">
+            <span>295</span>
+            <i class="fas fa-users"></i><br>
+            <span>employees</span>
+          </div>
+        </div>
+        <div class="col-lg-2 dash-card">
+          <div class="dash-card-content">
+            <span>1084</span>
+            <i class="fas fa-project-diagram"></i><br>
+            <span>projets</span>
+          </div>
+        </div>
+        <div class="col-lg-2 dash-card">
+          <div class="dash-card-content">
+            <span>09</span>
+            <i class="fas fa-envelope"></i><br>
+            <span>demande de conge</span>
+          </div>
+        </div>
+        <div class="col-lg-2 dash-card">
+          <div class="dash-card-content">
+            <span>05</span>
+            <i class="fas fa-bookmark"></i><br>
+            <span>attestations</span>
+          </div>
+        </div>
+      </div>
+      <!-- END Card Area -->
+
+      <!-- Employees data -->
+      <div class="row myrow">
+        <div class="row-content table-responsive">
+          <div class="tite-content">
+            <h5>list des employees</h5>
+            <a href="#" class="waves-effect">toutes les employees</a>
+          </div>
+          <div class="table-responsive">
+            <table class="table sp-table">
+            <thead>
+              <tr>
+                <th scope="col"><pre>photo</pre></th>
+                <th scope="col"><pre>nom complet</pre></th>
+                <th scope="col"><pre>departement</pre></th>
+                <th scope="col"><pre>service</pre></th>
+                <th scope="col"><pre>fonction</pre></th>
+                <th scope="col"><pre>statut</pre></th>
+                <th scope="col"><pre>date d'embouche</pre></th>
+                <th scope="col"><pre>date fin</pre></th>
+                <th scope="col"><pre>nombre projects</pre></th>
+                <th scope="col"><pre><i class="fas fa-cog"></i></pre></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><img src="img/user.svg" alt="Ayoub Idrissi"></pre></th>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>nom de departement</pre></td>
+                <td><pre>nom de service</pre></td>
+                <td><pre>nom de fonction</pre></td>
+                <td><pre>statut type</pre></td>
+                <td><pre>12-04-2001</pre></td>
+                <td><pre>27-09-2018</pre></td>
+                <td><pre>260</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="img/user.svg" alt="Ayoub Idrissi"></pre></th>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>nom de departement</pre></td>
+                <td><pre>nom de service</pre></td>
+                <td><pre>nom de fonction</pre></td>
+                <td><pre>statut type</pre></td>
+                <td><pre>12-04-2001</pre></td>
+                <td><pre>27-09-2018</pre></td>
+                <td><pre>260</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="img/user.svg" alt="Ayoub Idrissi"></pre></th>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>nom de departement</pre></td>
+                <td><pre>nom de service</pre></td>
+                <td><pre>nom de fonction</pre></td>
+                <td><pre>statut type</pre></td>
+                <td><pre>12-04-2001</pre></td>
+                <td><pre>27-09-2018</pre></td>
+                <td><pre>260</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="img/user.svg" alt="Ayoub Idrissi"></pre></th>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>nom de departement</pre></td>
+                <td><pre>nom de service</pre></td>
+                <td><pre>nom de fonction</pre></td>
+                <td><pre>statut type</pre></td>
+                <td><pre>12-04-2001</pre></td>
+                <td><pre>27-09-2018</pre></td>
+                <td><pre>260</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row"><img src="img/user.svg" alt="Ayoub Idrissi"></pre></th>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>nom de departement</pre></td>
+                <td><pre>nom de service</pre></td>
+                <td><pre>nom de fonction</pre></td>
+                <td><pre>statut type</pre></td>
+                <td><pre>12-04-2001</pre></td>
+                <td><pre>27-09-2018</pre></td>
+                <td><pre>260</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+      <!-- END Employees data -->
+
+      <!-- Agence info -->
+      <div class="row myrow">
+        <div class="row-content">
+          <div class="row myrow">
+            <div class="col-sm-6 tb">
+              <div class="tite-content">
+                <h5>departements</h5>
+                <a href="#" class="waves-effect">afficher touts</a>
+              </div>
+              <div class="table-responsive">
+                <table class="table sp-table small">
+                <thead>
+                  <tr>
+                    <th scope="col"><pre>#</pre></th>
+                    <th scope="col"><pre>nom</pre></th>
+                    <th scope="col"><pre><i class="fas fa-level-up-alt" data-toggle="popover-hover" data-placement="top" data-content="NUMERON ETAGE"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-cogs" data-toggle="popover-hover" data-placement="top" data-content="NOMBRE DE SERVICES"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-users" data-toggle="popover-hover" data-placement="top" data-content="NOMBRE DE EMPLOYEES"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-project-diagram" data-toggle="popover-hover" data-placement="top" data-content="NOMBRE DE PROJETS"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-cog"></i></pre></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>04</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>25</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>04</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>25</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>04</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>25</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>04</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>25</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>04</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>25</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+            <div class="col-sm-6 tb">
+              <div class="tite-content">
+                <h5>services</h5>
+                <a href="#" class="waves-effect">afficher touts</a>
+              </div>
+              <div class="table-responsive">
+                <table class="table sp-table small">
+                <thead>
+                  <tr>
+                    <th scope="col"><pre>#</pre></th>
+                    <th scope="col"><pre>nom</pre></th>
+                    <th scope="col"><pre>departement</pre></th>
+                    <th scope="col"><pre><i class="fas fa-users" data-toggle="popover-hover" data-placement="top" data-content="NOMBRE DE EMPLOYEES"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-project-diagram" data-toggle="popover-hover" data-placement="top" data-content="NOMBRE DE PROJETS"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-cog"></i></pre></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>service nom</pre></td>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>service nom</pre></td>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>service nom</pre></td>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>service nom</pre></td>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>service nom</pre></td>
+                    <td><pre>departement nom</pre></td>
+                    <td><pre>12</pre></td>
+                    <td><pre>150</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+          <div class="row myrow">
+            <div class="col-sm-6 tb">
+              <div class="tite-content">
+                <h5>projets</h5>
+                <a href="#" class="waves-effect">afficher touts</a>
+              </div>
+              <div class="table-responsive">
+                <table class="table sp-table small">
+                <thead>
+                  <tr>
+                    <th scope="col"><pre>#</pre></th>
+                    <th scope="col"><pre>nom</pre></th>
+                    <th scope="col"><pre>statut</pre></th>
+                    <th scope="col"><pre><i class="fas fa-calendar" data-toggle="popover-hover" data-placement="top" data-content="DATE DEBUT"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-calendar-check" data-toggle="popover-hover" data-placement="top" data-content="DATE FIN"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-exclamation-triangle" data-toggle="popover-hover" data-placement="top" data-content="alert"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-cog"></i></pre></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>projet nom</pre></td>
+                    <td><pre>statut 1</pre></td>
+                    <td><pre>12-02-2019</pre></td>
+                    <td><pre>12-05-2019</pre></td>
+                    <td class="is-alert">oui</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>projet nom</pre></td>
+                    <td><pre>statut 1</pre></td>
+                    <td><pre>12-02-2019</pre></td>
+                    <td><pre>12-05-2019</pre></td>
+                    <td class="is-alert">oui</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>projet nom</pre></td>
+                    <td><pre>statut 1</pre></td>
+                    <td><pre>12-02-2019</pre></td>
+                    <td><pre>12-05-2019</pre></td>
+                    <td class="is-alert">oui</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>projet nom</pre></td>
+                    <td><pre>statut 1</pre></td>
+                    <td><pre>12-02-2019</pre></td>
+                    <td><pre>12-05-2019</pre></td>
+                    <td class="is-alert">oui</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>projet nom</pre></td>
+                    <td><pre>statut 1</pre></td>
+                    <td><pre>12-02-2019</pre></td>
+                    <td><pre>12-05-2019</pre></td>
+                    <td class="is-alert">oui</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+            <div class="col-sm-6 tb">
+              <div class="tite-content">
+                <h5>fonctions</h5>
+                <a href="#" class="waves-effect">afficher touts</a>
+              </div>
+              <div class="table-responsive">
+                <table class="table sp-table small">
+                <thead>
+                  <tr>
+                    <th scope="col"><pre>#</pre></th>
+                    <th scope="col"><pre>nom</pre></th>
+                    <th scope="col"><pre><i class="fas fa-users" data-toggle="popover-hover" data-placement="top" data-content="NOMBRE DE EMPLOYEES"></i></pre></th>
+                    <th scope="col"><pre><i class="fas fa-dollar-sign" data-toggle="popover-hover" data-placement="top" data-content="salaire min"></i>min</pre></th>
+                    <th scope="col"><pre><i class="fas fa-dollar-sign" data-toggle="popover-hover" data-placement="top" data-content="salaire max"></i>max</pre></th>
+                    <th scope="col"><pre><i class="fas fa-cog"></i></pre></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>fonction nom</pre></td>
+                    <td><pre>28</pre></td>
+                    <td><pre>4000</pre></td>
+                    <td><pre>6500</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>fonction nom</pre></td>
+                    <td><pre>28</pre></td>
+                    <td><pre>4000</pre></td>
+                    <td><pre>6500</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>fonction nom</pre></td>
+                    <td><pre>28</pre></td>
+                    <td><pre>4000</pre></td>
+                    <td><pre>6500</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>fonction nom</pre></td>
+                    <td><pre>28</pre></td>
+                    <td><pre>4000</pre></td>
+                    <td><pre>6500</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</pre></th>
+                    <td><pre>fonction nom</pre></td>
+                    <td><pre>28</pre></td>
+                    <td><pre>4000</pre></td>
+                    <td><pre>6500</pre></td>
+                    <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Agence info -->
+
+      <!-- Conge Data -->
+      <div class="row myrow">
+        <div class="row-content table-responsive">
+          <div class="tite-content">
+            <h5>les demandes de conge</h5>
+            <a href="#" class="waves-effect">toutes les demandes</a>
+          </div>
+          <div class="table-responsive">
+            <table class="table sp-table img-less-border">
+            <thead>
+              <tr>
+                <th scope="col"><pre>#</pre></th>
+                <th scope="col"><pre>type</pre></th>
+                <th scope="col" colspan="2"><pre>employee</pre></th>
+                <th scope="col"><pre>duree</pre></th>
+                <th scope="col"><pre>date debut</pre></th>
+                <th scope="col"><pre>date fin</pre></th>
+                <th scope="col"><pre>statut</pre></th>
+                <th scope="col"><pre>fonction</pre></th>
+                <th scope="col"><pre>departement</pre></th>
+                <th scope="col"><pre><i class="fas fa-cog"></i></pre></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" style="padding:0;">1</pre></th>
+                <td><pre>type 1</pre></td>
+                <td><img src="img/user.svg" alt="Ayoub Idrissi"></td>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>07</pre></td>
+                <td><pre>04-07-2019</pre></td>
+                <td><pre>11-07-2019</pre></td>
+                <td><pre>statut 1</pre></td>
+                <td><pre>fonction 1</pre></td>
+                <td><pre>departement 1</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row" style="padding:0;">1</pre></th>
+                <td><pre>type 1</pre></td>
+                <td><img src="img/user.svg" alt="Ayoub Idrissi"></td>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>07</pre></td>
+                <td><pre>04-07-2019</pre></td>
+                <td><pre>11-07-2019</pre></td>
+                <td><pre>statut 1</pre></td>
+                <td><pre>fonction 1</pre></td>
+                <td><pre>departement 1</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row" style="padding:0;">1</pre></th>
+                <td><pre>type 1</pre></td>
+                <td><img src="img/user.svg" alt="Ayoub Idrissi"></td>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>07</pre></td>
+                <td><pre>04-07-2019</pre></td>
+                <td><pre>11-07-2019</pre></td>
+                <td><pre>statut 1</pre></td>
+                <td><pre>fonction 1</pre></td>
+                <td><pre>departement 1</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row" style="padding:0;">1</pre></th>
+                <td><pre>type 1</pre></td>
+                <td><img src="img/user.svg" alt="Ayoub Idrissi"></td>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>07</pre></td>
+                <td><pre>04-07-2019</pre></td>
+                <td><pre>11-07-2019</pre></td>
+                <td><pre>statut 1</pre></td>
+                <td><pre>fonction 1</pre></td>
+                <td><pre>departement 1</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+              <tr>
+                <th scope="row" style="padding:0;">1</pre></th>
+                <td><pre>type 1</pre></td>
+                <td><img src="img/user.svg" alt="Ayoub Idrissi"></td>
+                <td><pre><strong>nom</strong> prenom</pre></td>
+                <td><pre>07</pre></td>
+                <td><pre>04-07-2019</pre></td>
+                <td><pre>11-07-2019</pre></td>
+                <td><pre>statut 1</pre></td>
+                <td><pre>fonction 1</pre></td>
+                <td><pre>departement 1</pre></td>
+                <td><pre><a href="#" class="action"><i class="fab fa-gg-circle"></i></a></pre></td>
+              </tr>
+
+            </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+      <!-- Conge Data -->
+    </div>
+    <!-- END Content  -->
+
+  </div>
 
 
 
-    <!-- Icon-->
-    <link rel="icon" href="#">
-
-    <!-- END Icon-->
 
 
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="assets/main/css/font-awesome.min.css">
 
-    <!-- END Fonts -->
+  <!-- Assets js-->
+  <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/addons/datatables.min.js" charset="utf-8"></script>
+  <script type="text/javascript" src="assets/js/popper.min.js"></script>
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="assets/js/nicescroll.min.js"></script>
+  <script type="text/javascript" src="assets/js/mdb.min.js"></script>
+  <!-- END Assets js-->
 
-    <!-- Assets CSS-->
-    <link rel="stylesheet" href="assets/main/css/iconmind-line.css">
-    <link rel="stylesheet" href="assets/main/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/main/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/main/css/nice-select.css">
-    <link rel="stylesheet" href="assets/main/css/global-style.css">
-    <link rel="stylesheet" href="assets/main/css/banner.css">
-    <link rel="stylesheet" href="assets/main/css/assets/typography.css">
+  <!-- Main  js-->
+  <script type="text/javascript" src="js/master.js" charset="utf-8"></script>
+  <!-- END Main  js-->
 
-    <!-- END Assets CSS-->
+</body>
 
-    <!-- Main  CSS-->
-    <link rel="stylesheet" href="css/master.css">
-    <!-- END Main  CSS-->
-
-
-    <title>Management Personnel</title>
-  </head>
-  <body>
-
-    <h1>hi it's just me</h1>
-
-
-
-    <!-- Assets js-->
-    <script type="text/javascript" src="assets/main/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/main/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/main/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/main/js/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/main/js/jquery.nice-select.min.js"></script>
-    <script type="text/javascript" src="assets/main/js/main.js"></script>
-
-    <!-- END Assets js-->
-
-    <!-- Main  js-->
-    <script src="js/master.js" charset="utf-8"></script>
-    <!-- END Main  js-->
-  </body>
 </html>
